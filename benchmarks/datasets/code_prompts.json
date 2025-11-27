@@ -1,0 +1,17 @@
+{
+  "name": "Code Generation Prompts",
+  "version": "1.3",
+  "description": "Benchmark dataset for code-related prompt optimization",
+  "cases": [
+    {"id": "code-001", "category": "generation", "complexity": "light", "original_prompt": "write a python function to sort a list", "expected_techniques": ["clarity", "specificity"], "description": "Simple function request, no constraints"},
+    {"id": "code-002", "category": "generation", "complexity": "medium", "original_prompt": "build me a REST API for a todo app", "expected_techniques": ["decomposition", "code_prompting", "structured_output"], "description": "Multi-file project, needs decomposition"},
+    {"id": "code-003", "category": "debugging", "complexity": "medium", "original_prompt": "my code doesn't work can you fix it", "expected_techniques": ["clarity", "code_prompting", "react"], "description": "Missing error message, code, and expected behavior"},
+    {"id": "code-004", "category": "refactoring", "complexity": "heavy", "original_prompt": "refactor this entire codebase to use TypeScript and add tests", "expected_techniques": ["decomposition", "code_prompting", "role_prompting"], "description": "Large-scope refactor needs decomposition"},
+    {"id": "code-005", "category": "generation", "complexity": "medium", "original_prompt": "create a react component for a dashboard", "expected_techniques": ["specificity", "code_prompting", "few_shot"], "description": "Vague component spec needs detail"},
+    {"id": "code-006", "category": "review", "complexity": "medium", "original_prompt": "review my code", "expected_techniques": ["clarity", "role_prompting", "structured_output"], "description": "No code provided, no review criteria specified"},
+    {"id": "code-007", "category": "generation", "complexity": "heavy", "original_prompt": "build a full authentication system with OAuth, JWT, and role-based access control", "expected_techniques": ["decomposition", "code_prompting", "role_prompting", "context_engineering"], "description": "Complex multi-component system"},
+    {"id": "code-008", "category": "explanation", "complexity": "light", "original_prompt": "explain this regex", "expected_techniques": ["clarity", "persona"], "description": "No regex provided, no audience level specified"},
+    {"id": "code-009", "category": "optimization", "complexity": "medium", "original_prompt": "make this faster", "expected_techniques": ["clarity", "code_prompting", "cot"], "description": "No code, no performance metrics, no constraints"},
+    {"id": "code-010", "category": "generation", "complexity": "medium", "original_prompt": "write tests for my API", "expected_techniques": ["code_prompting", "structured_output", "specificity"], "description": "No API spec, no test framework preference"}
+  ]
+}
