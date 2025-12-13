@@ -1,0 +1,15 @@
+{
+  "name": "Analysis and Research Prompts",
+  "version": "1.1",
+  "description": "Benchmark dataset for analytical and research prompt optimization",
+  "cases": [
+    {"id": "analysis-001", "category": "data", "complexity": "medium", "original_prompt": "analyze this data and tell me what you find", "expected_techniques": ["clarity", "structured_output", "cot"], "description": "No data provided, no analysis goals specified"},
+    {"id": "analysis-002", "category": "strategy", "complexity": "heavy", "original_prompt": "should we build or buy our auth system?", "expected_techniques": ["step_back", "tot", "role_prompting", "context_engineering"], "description": "Strategic decision with multiple viable approaches"},
+    {"id": "analysis-003", "category": "research", "complexity": "heavy", "original_prompt": "research the competitive landscape for our product", "expected_techniques": ["decomposition", "role_prompting", "rag_awareness", "structured_output"], "description": "Broad research task needs decomposition and retrieval"},
+    {"id": "analysis-004", "category": "evaluation", "complexity": "medium", "original_prompt": "compare React vs Vue for our project", "expected_techniques": ["step_back", "structured_output", "context_engineering"], "description": "Framework comparison needs criteria and project context"},
+    {"id": "analysis-005", "category": "troubleshooting", "complexity": "medium", "original_prompt": "figure out why our conversion rate dropped", "expected_techniques": ["react", "cot", "context_engineering", "decomposition"], "description": "Diagnostic task needs systematic investigation"},
+    {"id": "analysis-006", "category": "planning", "complexity": "heavy", "original_prompt": "plan our product roadmap for next year", "expected_techniques": ["decomposition", "role_prompting", "context_engineering", "tot", "structured_output"], "description": "Strategic planning with many dependencies"},
+    {"id": "analysis-007", "category": "data", "complexity": "light", "original_prompt": "summarize the key takeaways from this report", "expected_techniques": ["clarity", "structured_output"], "description": "Simple summarization, needs format spec"},
+    {"id": "analysis-008", "category": "pricing", "complexity": "heavy", "original_prompt": "what should we charge for our SaaS product?", "expected_techniques": ["step_back", "role_prompting", "context_engineering", "cot", "self_consistency"], "description": "Pricing strategy needs market context and framework"}
+  ]
+}
