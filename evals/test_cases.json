@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "cases": [
+    {"id": "eval-clarity-001", "prompt": "Analyze the Q4 2025 revenue data broken down by product line and identify the top 3 growth drivers. Present findings as a table with percentage changes.", "expected_techniques": ["structured_output"], "complexity": "medium", "min_score": 0.6},
+    {"id": "eval-clarity-002", "prompt": "help", "expected_techniques": ["clarity"], "complexity": "light", "min_score": 0.2},
+    {"id": "eval-specific-001", "prompt": "Write a 500-word blog post about remote work productivity tips for software engineers. Tone: practical, no jargon. Include 5 actionable tips with examples.", "expected_techniques": ["persona", "specificity"], "complexity": "medium", "min_score": 0.65},
+    {"id": "eval-decomp-001", "prompt": "build a saas", "expected_techniques": ["decomposition", "clarity", "specificity"], "complexity": "heavy", "min_score": 0.15},
+    {"id": "eval-code-001", "prompt": "Debug this Python function that raises a TypeError when processing empty lists. Expected: return empty list. Actual: TypeError on line 5.", "expected_techniques": ["code_prompting"], "complexity": "medium", "min_score": 0.55},
+    {"id": "eval-struct-001", "prompt": "Extract all email addresses from the following text and return them as a JSON array sorted alphabetically.", "expected_techniques": ["structured_output"], "complexity": "light", "min_score": 0.6},
+    {"id": "eval-role-001", "prompt": "Act as a senior financial analyst. Evaluate this investment portfolio's risk-adjusted returns compared to the S&P 500 benchmark over the last 3 years.", "expected_techniques": ["role_prompting", "cot"], "complexity": "heavy", "min_score": 0.65},
+    {"id": "eval-neg-001", "prompt": "Don't use complicated words. Don't write more than 200 words. Don't include examples. Avoid technical language.", "expected_techniques": ["positive_framing"], "complexity": "light", "min_score": 0.2}
+  ]
+}
