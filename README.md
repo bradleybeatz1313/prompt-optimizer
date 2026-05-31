@@ -42,6 +42,38 @@ The optimizer applies only what moves the needle. A simple email gets a light to
 
 ## 📦 Quick Start
 
+### Claude Code (recommended — 2 commands)
+
+Install it as a plugin straight from this repo. Open Claude Code and run these two slash commands:
+
+```text
+/plugin marketplace add bradleybeatz1313/prompt-optimizer
+/plugin install prompt-optimizer@prompt-optimizer
+```
+
+That's it. ✅ The optimizer activates automatically on your next substantive prompt.
+
+**What each command does:**
+1. `/plugin marketplace add bradleybeatz1313/prompt-optimizer` — registers this GitHub repo as a plugin marketplace.
+2. `/plugin install prompt-optimizer@prompt-optimizer` — installs the `prompt-optimizer` plugin from that marketplace.
+
+**Verify / manage:**
+- `/plugin` — open the plugin manager UI to see it listed as installed
+- `/prompt-optimizer:prompt-optimizer` — invoke the skill manually any time
+- `/plugin marketplace update prompt-optimizer` — pull the latest version later
+
+<details>
+<summary>Other install methods for Claude Code (no plugin system)</summary>
+
+```bash
+# Install script
+bash scripts/install_code.sh
+
+# Or copy the skill file manually
+cp code/SKILL.md ~/.claude/skills/prompt-optimizer/SKILL.md
+```
+</details>
+
 ### Claude Desktop / Claude.ai
 
 ```bash
@@ -51,24 +83,6 @@ bash scripts/install_desktop.sh
 # Option 2: Manual
 # Copy contents of desktop/SKILL.md → Claude.ai Project → Custom Instructions
 ```
-
-### Claude Code
-
-```bash
-# Option 1: Plugin marketplace (recommended)
-# In Claude Code, run these slash commands:
-/plugin marketplace add bradleybeatz1313/prompt-optimizer
-/plugin install prompt-optimizer@prompt-optimizer
-
-# Option 2: Install script
-bash scripts/install_code.sh
-
-# Option 3: Manual
-cp code/SKILL.md ~/.claude/skills/prompt-optimizer/SKILL.md
-```
-
-Once installed via the plugin system, the skill activates automatically on substantive
-prompts and can also be invoked manually with `/prompt-optimizer:prompt-optimizer`.
 
 ## 🎯 Before & After
 
