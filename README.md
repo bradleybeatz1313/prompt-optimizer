@@ -55,12 +55,20 @@ bash scripts/install_desktop.sh
 ### Claude Code
 
 ```bash
-# Option 1: Install script
+# Option 1: Plugin marketplace (recommended)
+# In Claude Code, run these slash commands:
+/plugin marketplace add bradleybeatz1313/prompt-optimizer
+/plugin install prompt-optimizer@prompt-optimizer
+
+# Option 2: Install script
 bash scripts/install_code.sh
 
-# Option 2: Manual
+# Option 3: Manual
 cp code/SKILL.md ~/.claude/skills/prompt-optimizer/SKILL.md
 ```
+
+Once installed via the plugin system, the skill activates automatically on substantive
+prompts and can also be invoked manually with `/prompt-optimizer:prompt-optimizer`.
 
 ## 🎯 Before & After
 
@@ -83,6 +91,12 @@ cp code/SKILL.md ~/.claude/skills/prompt-optimizer/SKILL.md
 
 ```
 prompt-optimizer/
+├── .claude-plugin/          # Claude Code plugin system
+│   ├── plugin.json          # Plugin manifest
+│   └── marketplace.json     # Marketplace catalog (install via /plugin)
+├── skills/                  # Plugin-shipped skills (auto-discovered)
+│   └── prompt-optimizer/
+│       └── SKILL.md         # Claude Code edition skill
 ├── desktop/                 # Claude Desktop edition
 │   ├── SKILL.md             # Full 14-technique framework (v2.1)
 │   ├── README.md            # Desktop-specific documentation

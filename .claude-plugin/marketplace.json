@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "prompt-optimizer",
+  "description": "Marketplace for the Prompt Optimizer plugin — automatic prompt engineering for Claude Code.",
+  "owner": {
+    "name": "Brad Barroso",
+    "url": "https://github.com/bradleybeatz1313"
+  },
+  "plugins": [
+    {
+      "name": "prompt-optimizer",
+      "source": "./",
+      "description": "Analyzes and improves every substantive prompt before execution using a 10-technique framework.",
+      "version": "2.0.0",
+      "category": "productivity",
+      "keywords": ["prompt-engineering", "prompt-optimization", "productivity"]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "prompt-optimizer",
+  "displayName": "Prompt Optimizer",
+  "version": "2.0.0",
+  "description": "A prompt optimization layer for Claude Code that analyzes and improves every substantive prompt before execution, applying the most impactful techniques from a 10-technique framework (clarity, power verbs, decomposition, role prompting, context engineering, structured output, chain-of-thought, step-back, Tree of Thoughts, ReAct).",
+  "author": {
+    "name": "Brad Barroso",
+    "url": "https://github.com/bradleybeatz1313"
+  },
+  "homepage": "https://github.com/bradleybeatz1313/prompt-optimizer",
+  "repository": "https://github.com/bradleybeatz1313/prompt-optimizer",
+  "license": "MIT",
+  "keywords": [
+    "prompt-engineering",
+    "prompt-optimization",
+    "productivity",
+    "chain-of-thought",
+    "context-engineering"
+  ]
+}
